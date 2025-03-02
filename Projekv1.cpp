@@ -25,8 +25,10 @@ void home2(){
 void home1();
 void sign_in(){
     header();
-    cout << "Username : "; cin >> user[tot_user].ussername;
-    cout << "Password : "; cin >> user[tot_user].password;
+    cout << "Username : ";
+        cin >> user[tot_user].ussername;
+    cout << "Password : ";
+        cin >> user[tot_user].password;
     tot_user++;
     home1();
 }
@@ -38,8 +40,10 @@ void login(){
         system("pause");
         sign_in();
     } else {
-        cout << "Username : "; cin >> user[tot_user].ussername;
-        cout << "Password : "; cin >> user[tot_user].password;
+        cout << "Username : ";
+            cin >> user[tot_user].ussername;
+        cout << "Password : ";
+            cin >> user[tot_user].password;
 
         bool login_success = false;
         for (int i = 0; i < tot_user; i++) {
